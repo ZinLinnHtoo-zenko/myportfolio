@@ -52,7 +52,7 @@ a:hover {
   color: var(--primary-color);
 }
 
-figure {
+.mm-figure {
   display: flex;
   align-items: center;
 }
@@ -81,4 +81,9 @@ figure {
 .ctn2 {
   display: flex;
   gap: 1.2rem;
+}
+
+main {
+  display: flex;
+  justify-content: end;
 }
