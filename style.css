@@ -72,6 +72,7 @@ a:hover {
 
 .contactme-btn {
   font-size: 1.6rem;
+  color: var(--bg-color);
   background-color: var(--primary-color);
   border: 2px solid black;
   border-radius: 4rem;
@@ -101,7 +102,7 @@ a:hover {
 .left-section {
   display: flex;
   flex-direction: column;
-  margin: 4rem;
+  margin-top: 8rem;
 }
 
 h1 {
@@ -130,11 +131,25 @@ h2 {
   color: var(--secondary-color);
 }
 
-p {
-  margin-top: 2rem;
-  line-height: 3.2rem;
-  font-size: 2rem;
-  text-align: justify;
+.info-me {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.btn-all {
+  padding: 1.2rem;
+  margin-top: 4rem;
+  border: 2px solid black;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact-btn {
+  background-color: var(--primary-color);
+  color: var(--bg-color);
 }
 
 .logo-section {
@@ -145,7 +160,7 @@ p {
 }
 
 .social-logo {
-  font-size: 2.8rem;
+  font-size: 3.2rem;
 }
 
 .fa-github:hover {
@@ -158,4 +173,64 @@ p {
 
 .fa-linkedin:hover {
   color: var(--secondary-color);
+}
+
+/*This is the start of about section*/
+.abtme-h1 {
+  margin-top: 4rem;
+}
+
+.about-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 4rem;
+}
+
+.figure-center {
+  display: flex;
+  justify-content: center;
+  grid-row: 1 / 3;
+}
+
+.zlh-suit-figure {
+  display: flex;
+  justify-content: center;
+  border: 2px solid black;
+  max-width: 350px;
+}
+
+.zlh-suit-img {
+  object-fit: contain;
+}
+
+.about-myself {
+  grid-column: 2 / 4;
+}
+
+.exp-section,
+.education-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 560px;
+
+  font-size: 1.6rem;
+  border: 2px solid black;
+  border-radius: 22px;
+  margin-top: 3.6rem;
+  margin-bottom: 2rem;
+}
+
+.exp-edu {
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+
+.about-myself {
+  font-size: 2rem;
+  line-height: 2.8rem;
+  text-align: justify;
+  max-width: 1200px;
 }
